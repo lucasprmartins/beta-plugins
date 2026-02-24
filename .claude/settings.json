@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+
+  "cleanupPeriodDays": 7,
+
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+
+  "statusLine": {
+    "type": "command",
+    "command": "node .claude/statusline.mjs"
+  },
+  "terminalProgressBarEnabled": true,
+  "showTurnDuration": true,
+  "spinnerVerbs": {
+    "mode": "replace",
+    "verbs": [
+      "Usando a Força",
+      "Estalando os dedos",
+      "Consultando o Conselho Jedi",
+      "Montando o Vibranium",
+      "Hackeando a Estrela da Morte",
+      "Ativando o Mjölnir",
+      "Abrindo portal com o Doutor Estranho",
+      "Calculando o salto pro hiperespaço",
+      "Reunindo as Jóias do Infinito",
+      "Analisando com a FRIDAY",
+      "Canalizando o lado sombrio",
+      "Forjando em Nidavellir",
+      "Decifrando com o JARVIS",
+      "Consultando o Holocron",
+      "Ativando protocolo Vingadores"
+    ]
+  },
+
+  "companyAnnouncements": [
+    "Um commit atômico por vez, jovem padawan. O Spellbook exige disciplina.",
+    "Pular o /brainstorm é como o Thanos agindo sem pensar: o estalo vem, mas metade do projeto some. 🫰",
+    "Que a Força do /plan esteja com você. Sempre.",
+    "O agente maker implementa, o fixer corrige, o reviewer julga. Tipo Vingadores, cada um com sua skill.",
+    "/brainstorm → /plan → /execute → /review. Essa é a ordem dos Jedi, não pule etapas.",
+    "Skill sem descrição clara é como um Stormtrooper mirando: não acerta nada.",
+    "Consulte o Context7, Luke. Não confie só na memória do modelo.",
+    "Especificação mal feita? Nem o Doutor Estranho viu esse futuro em 14 milhões de possibilidades.",
+    "feat(skill): nova habilidade desbloqueada. Conventional Commits, o caminho Jedi é. 🧘",
+    "O /execute sem /plan é como o Hulk sem o Banner: força bruta sem direção.",
+    "Café carregado, reator arc ligado, Spellbook aberto... bora codar! ☕",
+    "Faça ou não faça. Não existe tentar... sem /plan antes.",
+    "MCP Server conectado? Então você tem mais poder que a Estrela da Morte. Use com sabedoria.",
+    "O reviewer é o Heimdall do código: nada passa sem ser visto.",
+    "Plugin bem feito é como o escudo do Capitão: simples, sólido e resolve qualquer coisa.",
+    "Não é bug, é uma variante do multiverso. Mas o /review vai achar. 🫠",
+    "O agente fixer é tipo o Homem de Ferro: conserta tudo, mas reclama no processo.",
+    "Com grandes plugins vêm grandes responsabilidades... de documentar em PT-BR.",
+    "git add . é o lado sombrio da Força. Commit atômico, sempre.",
+    "O Spellbook é o seu Grimório. Cada skill é um feitiço. Use com maestria. ✨",
+    "Se o YAML tá quebrado, nem o JARVIS decodifica. Valide o frontmatter!",
+    "Não subestime o poder do /design. Até o Stark fazia blueprint antes de soldar.",
+    "/commit sem mensagem descritiva? Darth Vader ficaria desapontado.",
+    "O maker é o seu Groot: faz o trabalho pesado e só precisa de direção clara. 🌱"
+  ]
+}
