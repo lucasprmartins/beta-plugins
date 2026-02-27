@@ -245,4 +245,4 @@ Se você se pegar pensando qualquer um destes, PARE:
 
 ## Finalização
 
-Após salvar o plano, informe o caminho do arquivo salvo, pergunte se o usuário precisa de alguma alteração e mencione que ele pode usar `/clear` para limpar o contexto e `/execute` para executar o plano quando estiver pronto.
+Após salvar o plano, informe o caminho do arquivo salvo, pergunte se o usuário precisa de alguma alteração e recomende limpar a janela de contexto antes de executar a próxima etapa (`/execute`).

@@ -102,7 +102,7 @@ Ao despachar cada maker, usar o agente `spellbook:maker` com o template `./maker
 
 ### 5. Finalização
 
-Após todas as tarefas concluídas, informe o usuário que a implementação foi concluída, pergunte se precisa de alguma alteração e mencione que ele pode usar `/clear` para limpar o contexto e `/review` para revisão de código quando estiver pronto.
+Após todas as tarefas concluídas, informe o usuário que a implementação foi concluída, pergunte se precisa de alguma alteração e recomende limpar a janela de contexto antes de executar a próxima etapa (`/review`).
 
 ## Regras Invioláveis
 

@@ -78,6 +78,13 @@ EOF
 
 Todas as chamadas de ferramentas devem ser feitas em uma única mensagem. Não envie texto adicional além das chamadas.
 
+### 7. Finalização
+
+Após a criação da PR, informe ao usuário:
+1. Que a PR foi criada com sucesso
+2. O link da PR
+3. Que ela está em modo **rascunho** e precisa ser promovida para review quando estiver pronta
+
 ## Erros Comuns
 
 | Erro | Correção |

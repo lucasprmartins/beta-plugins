@@ -220,4 +220,4 @@ Todo documento de especificação DEVE seguir esta estrutura:
 
 ## Finalização
 
-Após salvar a especificação, informe o caminho do arquivo salvo, pergunte se o usuário precisa de alguma alteração e mencione que ele pode usar `/clear` para limpar o contexto e `/plan` para criar o plano de implementação quando estiver pronto.
+Após salvar a especificação, informe o caminho do arquivo salvo, pergunte se o usuário precisa de alguma alteração e recomende limpar a janela de contexto antes de executar a próxima etapa (`/plan`).

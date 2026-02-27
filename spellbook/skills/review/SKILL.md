@@ -105,7 +105,7 @@ Após o fixer concluir, rodar via Bash: lint → tipos → build.
 Informar ao usuário:
 1. Que a revisão foi concluída (com ou sem correções)
 2. Resumo do que foi encontrado e corrigido
-3. Que pode usar `/clear` para limpar o contexto e criar a pull request
+3. Recomendar limpar a janela de contexto antes de criar a pull request (`/pr`)
 
 ## Regras Invioláveis
 
