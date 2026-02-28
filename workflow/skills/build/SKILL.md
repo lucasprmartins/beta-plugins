@@ -87,6 +87,8 @@ Para cada fase, na ordem:
 2. Aguardar **TODOS** os makers da fase concluírem
 3. Marcar tarefas como concluídas, prosseguir para próxima fase
 
+**Modo de despacho:** Todos os makers devem ser despachados em **foreground** (`run_in_background: false`). Múltiplas chamadas Agent na mesma mensagem já executam em paralelo — NÃO use `run_in_background: true`.
+
 ### 4. Template de Despacho
 
 Ao despachar cada maker, usar o agente `workflow:maker` com o template `./maker-prompt.md`, preenchendo:

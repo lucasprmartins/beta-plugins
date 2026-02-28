@@ -68,6 +68,8 @@ SHA_HEAD=$(git rev-parse HEAD)
 
 ### 2. Despachar Reviewer
 
+**Modo de despacho:** Todos os subagentes (reviewer e fixer) devem ser despachados em **foreground** (`run_in_background: false`). NUNCA use `run_in_background: true` — o orquestrador precisa do resultado antes de prosseguir.
+
 Preencha o template `./reviewer-prompt.md` e despache o agente `workflow:reviewer`:
 
 - **Modo pipeline:** usar Template A — diffs por tarefa com SHAs dos makers
