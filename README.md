@@ -1,12 +1,14 @@
 <div align="center">
 
-<img src="https://cdn.simpleicons.org/claude" alt="Claude" width="80" />
+<p>
+  <img src="https://raw.githubusercontent.com/lucasprmartins/beta/main/apps/web/public/logo-1.svg" alt="Beta" height="70" align="center" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/plugins-7c3aed?style=for-the-badge" alt="Plugins" height="28" align="center" />
+</p>
 
-# Beta Plugins
+[![GitHub](https://img.shields.io/badge/Template-Beta-7c3aed?logo=github)](https://github.com/lucasprmartins/beta)
 
-**Coleção de plugins com skills, agentes e comandos para Claude Code.**
-
-[Plugins](#plugins) · [Instalação](#instalação) · [Uso](#uso) · [Estrutura](#estrutura)
+<sub>Feito para <img src="https://cdn.simpleicons.org/claude/d97757" alt="Claude" height="12" /> Claude Code · adaptável para outros agentes</sub>
 
 </div>
 
@@ -14,7 +16,7 @@
 
 ## Sobre
 
-Beta Plugins é um ecossistema de plugins para [Claude Code](https://github.com/anthropics/claude-code) que oferece um pipeline completo de desenvolvimento — da ideação à revisão de código — através de skills orquestradas e subagentes especializados.
+Plugins para [Claude Code](https://github.com/anthropics/claude-code) que oferece um pipeline completo de desenvolvimento — da ideação à revisão de código — através de skills orquestradas e subagentes especializados.
 
 ## Plugins
 
@@ -51,113 +53,14 @@ Utilitários de produtividade para o dia a dia.
 
 ## Instalação
 
-**Pré-requisitos:** [Claude Code](https://github.com/anthropics/claude-code) instalado e configurado.
-
-### Adicionar via CLI
+Adicione o marketplace e instale os plugins desejados:
 
 ```bash
-claude plugins:add /caminho/para/beta-plugins/workflow
-claude plugins:add /caminho/para/beta-plugins/essentials
+# 1. Registrar o repositório como marketplace
+/plugin marketplace add lucasprmartins/beta-plugins
+
+# 2. Instalar plugins
+/plugin install workflow@beta-plugins
+/plugin install essentials@beta-plugins
 ```
 
-### Adicionar manualmente
-
-Adicione os caminhos dos plugins no seu arquivo de configuração do Claude Code (`settings.json`):
-
-```json
-{
-  "plugins": [
-    "/caminho/para/beta-plugins/workflow",
-    "/caminho/para/beta-plugins/essentials"
-  ]
-}
-```
-
-## Uso
-
-### Fluxo completo de desenvolvimento
-
-```
-Ideia → /spec → /roadmap → /build → /check → /commit → /pr
-```
-
-#### 1. Especificar a ideia
-
-```
-/spec Quero criar um sistema de autenticação com OAuth
-```
-
-O spec gera uma especificação em `.workflow/specs/`.
-
-#### 2. Planejar a implementação
-
-```
-/roadmap
-```
-
-Converte a especificação em tarefas atômicas salvas em `.workflow/plans/`.
-
-#### 3. Executar as tarefas
-
-```
-/build
-```
-
-Despacha subagentes `maker` que implementam as tarefas em paralelo por fases.
-
-#### 4. Revisar o código
-
-```
-/check
-```
-
-Despacha `reviewer` para verificação técnica e `fixer` para correções automáticas.
-
-#### 5. Commitar e abrir PR
-
-```
-/commit
-/pr
-```
-
-### Skills independentes
-
-As skills do Essentials podem ser usadas de forma independente a qualquer momento:
-
-```
-/commit          # Commit atômico das mudanças atuais
-/design          # Criar uma interface UI/UX
-/pr              # Abrir um pull request
-```
-
-## Estrutura
-
-```
-beta-plugins/
-├── .claude-plugin/
-│   └── marketplace.json          # Registro dos plugins
-├── workflow/                     # Plugin: pipeline de desenvolvimento
-│   ├── .claude-plugin/
-│   │   └── plugin.json
-│   ├── agents/
-│   │   ├── maker.md
-│   │   ├── reviewer.md
-│   │   └── fixer.md
-│   └── skills/
-│       ├── spec/
-│       ├── roadmap/
-│       ├── build/
-│       └── check/
-├── essentials/                   # Plugin: utilitários
-│   ├── .claude-plugin/
-│   │   └── plugin.json
-│   └── skills/
-│       ├── commit/
-│       ├── design/
-│       └── pr/
-└── README.md
-```
-
-## Autor
-
-Feito por [Lucas Martins](mailto:lucasprmartins@icloud.com).
