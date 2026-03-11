@@ -20,24 +20,22 @@ Plugins para [Claude Code](https://github.com/anthropics/claude-code) que oferec
 
 ## Plugins
 
-### Workflow
+### Superpowers
 
 Pipeline completo de desenvolvimento com orquestração de subagentes.
 
 | Skill | Descrição |
 |-------|-----------|
-| `/spec` | Transforma ideias vagas em especificações detalhadas |
-| `/roadmap` | Converte especificações em tarefas atômicas e executáveis |
-| `/build` | Orquestra subagentes `maker` para execução paralela por fases |
-| `/check` | Orquestra subagentes `reviewer` e `fixer` em loop de verificação |
+| `/brainstorming` | Gera soluções e abordagens para um problema específico |
+| `/planning` | Cria planos de implementação detalhados a partir de especificações |
+| `/building` | Executa planos de implementação com tarefas em fases paralelas |
+| `/checking` | Revisa e checa código para garantir qualidade e consistência |
 
 **Subagentes:**
 
 | Agente | Função |
 |--------|--------|
-| `maker` | Implementa tarefas individuais com commits atômicos |
-| `reviewer` | Executa verificações técnicas e revisão de código |
-| `fixer` | Aplica correções cirúrgicas nos problemas encontrados |
+| `builder` | Implementa tarefas individuais do plano de implementação |
 
 ### Essentials
 
@@ -47,7 +45,7 @@ Utilitários de produtividade para o dia a dia.
 |-------|-----------|
 | `/commit` | Commits atômicos seguindo Conventional Commits |
 | `/design` | Criação de interfaces UI/UX profissionais e distintas |
-| `/pr` | Pull requests padronizados com checklist de verificação |
+| `/pr` | Pull requests padronizadas como rascunho |
 
 **MCP Server:** [Context7](https://mcp.context7.com) — consulta de documentação em tempo real.
 
@@ -60,7 +58,7 @@ Adicione o marketplace e instale os plugins desejados:
 /plugin marketplace add lucasprmartins/beta-plugins
 
 # 2. Instalar plugins
-/plugin install workflow@beta-plugins
+/plugin install superpowers@beta-plugins
 /plugin install essentials@beta-plugins
 ```
 
