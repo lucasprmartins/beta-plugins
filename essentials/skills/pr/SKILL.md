@@ -2,7 +2,7 @@
 name: pr
 description: Use quando precisar criar uma pull request a partir das alterações atuais do repositório. Acionado por pedidos como "cria uma PR", "abre PR", "manda pra review".
 model: haiku
-allowed-tools: Bash
+allowed-tools: Bash(git *)
 ---
 
 ## Contexto
@@ -60,6 +60,8 @@ EOF
 
 - Execute o processo em **ORDEM SEQUENCIAL**. Não pule etapas ou execute fora de ordem.
 - **SEMPRE** use `--draft`. Nunca omita essa flag.
+- **SEMPRE** use `git commit -m "mensagem"` com a mensagem direto na flag `-m`. 
+- **NUNCA** use `$(cat <<EOF)`, heredoc ou subshell para passar a mensagem do commit.
 - Siga **RIGOROSAMENTE** o formato de título e body. Nunca crie uma PR sem seguir o formato.
 - O título deve ser curto, descritivo e seguir o formato `<tipo>: <descrição>`
 
