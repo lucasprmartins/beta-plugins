@@ -2,7 +2,7 @@
 name: brainstorming
 description: Use esta skill para gerar soluções ou abordagens para um problema específico do usuário.
 model: opus
-allowed-tools: Read, Grep, Glob, WebSearch, WebFetch
+allowed-tools: Read, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 
 ## Visão Geral
@@ -18,11 +18,11 @@ $ARGUMENTS
 
 ## Processo
 
-1. Contexto: Use o subagente `Explore` para entender melhor ao contexto do projeto em que está inserido.
-2. Input em Link: Caso o usuário forneça um link, verifique se existe uma ferramenta MCP para buscar o conteúdo (Ex: Link do Notion será a tool `notion-fetch` do MCP do Notion). Se não existir, use a tool `WebFetch` para buscar o conteúdo.
+1. Contexto do Projeto: Use o subagente `Explore` para entender melhor ao contexto do projeto em que está inserido.
+2. Contexto do Input: Caso o usuário forneça um link, use o MCP para buscar o conteúdo (Ex: Link do Notion será a tool `notion-fetch` do MCP do Notion).
 3. Documentação: Caso o usuário forneça no input o nome de alguma tecnologia, framework ou biblioteca, use o MCP `Context7` para buscar a documentação oficial e entender melhor sobre o assunto.
 
-**ATENÇÃO:** As 3 primeiras etapas podem ser executadas em paralelo, ou seja, não é necessário esperar a conclusão de uma para iniciar a outra. O importante é garantir que todas sejam concluídas antes de passar para a próxima etapa.
+**ATENÇÃO:** Se algum MCP nas etapas 2 e 3 não estiver disponível, use a ferramenta `WebSearch` para encontrar a documentação oficial e depois a ferramenta `WebFetch` para buscar o conteúdo.
 
 4. Explorar abordagens:
   - Proponha 3-5 abordagens diferentes com vantagens e desvantagens para resolver o problema, considerando o contexto e as informações coletadas nas etapas anteriores.
