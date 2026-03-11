@@ -2,6 +2,7 @@
 name: pr
 description: Use quando precisar criar uma pull request a partir das alterações atuais do repositório. Acionado por pedidos como "cria uma PR", "abre PR", "manda pra review".
 model: haiku
+allowed-tools: Bash
 ---
 
 ## Contexto
