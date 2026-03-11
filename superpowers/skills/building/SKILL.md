@@ -2,12 +2,12 @@
 name: building
 description: Use esta skill para executar um plano de implementação com tarefas independentes formatado em um documento.
 model: sonnet
-allowed-tools: Read, Grep, Glob, Bash, WebSearch, WebFetch
+allowed-tools: Read, Grep, Glob, Bash
 ---
 
 ## Visão Geral
 
-Executa um plano de implementação seguindo as tarefas e dependências definidas em um documento de plano. As tarefas são executadas através de subagentes em fases paralelas, agrupadas por dependências, garantindo que cada tarefa seja concluída antes de iniciar as dependentes.
+Executar um plano de implementação seguindo as tarefas e dependências definidas em um documento de plano. As tarefas são executadas através de subagentes em fases paralelas, agrupadas por dependências, garantindo que cada tarefa seja concluída antes de iniciar as dependentes.
 
 **PRINCÍPIO FUNDAMENTAL:** Orquestrar subagentes para executar as tarefas, não implementar diretamente. Garanta que as tarefas sejam executadas na ordem correta, monitorar o progresso e lidar com dependências.
 
@@ -20,11 +20,10 @@ $ARGUMENTS
 
 1. Analisar o plano: Ler o documento de plano e extrair as tarefas, dependências e pilha de tecnologias.
 2. Analisar a especificação do plano: Ler o documento de especificação referenciado no plano para entender o contexto, objetivos e arquitetura da solução a ser implementada.
-3. Registrar SHA base: Use `git rev-parse HEAD` para registrar o SHA atual do repositório antes de iniciar a execução das tarefas.
-4. Preparar as tarefas a serem executadas:
+3. Preparar as tarefas a serem executadas:
   - Usar a tool `TaskCreate` para criar cada tarefa definida no plano. (Exemplo: Tarefa [n]: [nome])
   - Agrupar as tarefas em fases com base nas dependências, garantindo que as tarefas sem dependências sejam agrupadas na primeira fase, e as tarefas dependentes sejam agrupadas em fases subsequentes.
-5. Executar as tarefas:
+4. Executar as tarefas:
   - Para cada tarefa, despachar o subagente `superpowers:builder` utilizando o prompt `./builder-prompt.md`.
   - As tarefas de cada fase devem ser executadas em **PARALELO**, ou seja, não há necessidade de aguardar a conclusão de uma tarefa para iniciar a próxima dentro da mesma fase.
   - Aguardar a conclusão de todas as tarefas de uma fase antes de prosseguir para a próxima.
