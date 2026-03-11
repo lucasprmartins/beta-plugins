@@ -31,6 +31,7 @@ $ARGUMENTS
 
 ## Instruções
 
+- Execute o processo em **ORDEM SEQUENCIAL**. Não pule etapas ou execute fora de ordem.
 - Toda tarefa do plano **DEVE** ser executada pelo subagente `superpowers:builder`. Você é orquestrador, não implementador.
 - Siga **RIGOROSAMENTE** o modelo de prompt `./builder-prompt.md` para garantir que os subagentes tenham instruções claras e consistentes para executar as tarefas.
 - Cada fase deve aguardar conclusão **TOTAL** antes da próxima. Se uma tarefa da fase falhar, a fase inteira deve ser resolvida antes de prosseguir.

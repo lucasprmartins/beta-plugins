@@ -31,6 +31,7 @@ $ARGUMENTS
 
 ## Instruções
 
+- Execute o processo em **ORDEM SEQUENCIAL**. Não pule etapas ou execute fora de ordem.
 - Siga **RIGOROSAMENTE** o modelo `./plan.md` para garantir que o plano esteja bem estruturado e claro.
 - Nunca escreva um plano sem antes ler os arquivos relevantes do projeto.
 - Toda tarefa deve ter o caminho explícito dos arquivos a serem criados ou modificados, incluindo números de linhas quando necessário.

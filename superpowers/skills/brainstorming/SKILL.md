@@ -35,6 +35,7 @@ $ARGUMENTS
 
 ## Instruções
 
+- Execute o processo em **ORDEM SEQUENCIAL**. Não pule etapas ou execute fora de ordem.
 - Toda interação com o usuário **DEVE** usar a ferramenta `AskUserQuestion` com opções selecionáveis. Texto livre para perguntas é proibido.
 - A etapa 4 diz em 2-3 abordagens, mas sinta-se livre para propor mais ou menos opções dependendo do contexto e da complexidade do problema.
 - A etapa 5 é **SOMENTE UM RESUMO**, portanto, não é necessário entrar em detalhes técnicos ou específicos. O objetivo é fornecer uma visão geral clara e concisa de cada seção para que o usuário possa validar antes de prosseguir.
