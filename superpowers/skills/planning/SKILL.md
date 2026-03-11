@@ -37,8 +37,8 @@ $ARGUMENTS
 - Tarefas atômicas, ou seja, cada tarefa deve ser independente e ter um objetivo claro, evitando a necessidade de adivinhação ou suposições por parte do agente que irá executar o plano.
 - Cada tarefa entrega um componente funcional específico. Não use "Fase 1: Preparação" ou "Fase 2: Desenvolvimento". Cada tarefa deve ser nomeada de acordo com o componente que entrega, por exemplo, "Tarefa 1: Implementar API de Autenticação".
 - As tarefas devem ter dependências explícitas, ou seja, se a Tarefa 2 depende da Tarefa 1, isso deve ser claramente indicado no plano. Evite dependências implícitas ou suposições sobre a ordem de implementação.
-- Utilize YAGNI (You Aren't Gonna Need It) para evitar a tentação de adicionar detalhes desnecessários à especificação. Concentre-se apenas no que é essencial para resolver o problema do usuário.
-- Utilize DRY (Don't Repeat Yourself) para evitar redundâncias na especificação. Se algo já foi mencionado em uma seção, não é necessário repetir em outra seção.
+- Utilize YAGNI (You Aren't Gonna Need It) para evitar a tentação de adicionar detalhes desnecessários ao plano. Concentre-se apenas no que é essencial para resolver a especificação.
+- Utilize DRY (Don't Repeat Yourself) para evitar redundâncias no plano.
 
 ## Saída
 
