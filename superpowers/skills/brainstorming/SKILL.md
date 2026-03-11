@@ -7,7 +7,7 @@ allowed-tools: Read, Grep, Glob, Bash, WebSearch, WebFetch
 
 ## Visão Geral
 
-A skill é projetada para ajudar a gerar soluções ou abordagens para um problema específico. O processo é interativo e colaborativo, permitindo que refine os problemas do usuário para criar uma especificação para a solução.
+Ajudar a gerar soluções ou abordagens para um problema específico. O processo é interativo e colaborativo, permitindo que refine os problemas do usuário para criar uma especificação para a solução.
 
 **PRINCÍPIO FUNDAMENTAL:** O objetivo é explorar uma ampla gama de possibilidades antes de convergir para uma especificação que descreve O QUE construir, nunca COMO implementar. Código, SQL, schemas e estrutura de arquivos não devem ser inseridas na especificação gerada.
 
