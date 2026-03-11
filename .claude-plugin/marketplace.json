@@ -25,6 +25,16 @@
         "name": "Lucas Martins",
         "email": "lucasprmartins@icloud.com"
       }
+    },
+    {
+      "name": "superpowers",
+      "description": "Superpoderes para potencializar seu fluxo de desenvolvimento.",
+      "version": "0.0.1",
+      "source": "./superpowers/",
+      "author": {
+        "name": "Lucas Martins",
+        "email": "lucasprmartins@icloud.com"
+      }
     }
   ]
 }
