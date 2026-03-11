@@ -18,9 +18,9 @@ $ARGUMENTS
 
 ## Processo
 
-1. Contexto do Projeto: Use o subagente `Explore` para entender melhor ao contexto do projeto em que está inserido.
-2. Contexto do input com Link: Caso o usuário forneça um link, use o MCP para buscar o conteúdo (Exemplo: Link do Notion será a tool `notion-fetch` do MCP do `Notion`).
-3. Contexto do input com referências á tecnologias: Caso o usuário forneça no input o nome de alguma tecnologia, framework ou biblioteca, use o MCP `Context7` para buscar a documentação oficial e entender melhor sobre o assunto.
+1. Exlorar o projeto: Use o subagente `Explore` para entender melhor ao contexto do projeto em que está inserido.
+2. Explorar o input com link: Caso o usuário forneça um link, use o MCP para buscar o conteúdo (Exemplo: Link do Notion será a tool `notion-fetch` do MCP do `Notion`).
+3. Explorar referências á tecnologias: Caso o usuário forneça no input o nome de alguma tecnologia, framework ou biblioteca, use o MCP `Context7` para buscar a documentação oficial e entender melhor sobre o assunto.
 
 **ATENÇÃO:** Se algum MCP nas etapas 2 e 3 não estiver disponível, use as ferramentas `WebSearch` e `WebFetch`.
 
@@ -31,14 +31,14 @@ $ARGUMENTS
 5. Apresentar a especificação:
   - Apresente um **RESUMO** das seções da especificação em **150-250 PALAVRAS** permitindo que o usuário valide cada seção antes de prosseguir para a próxima.
   - As seções obrigatórias são: Objetivo e Contexto → Requisitos Funcionais → Arquitetura → Restrições e Decisões → Critérios de Sucesso.
-6. Consolidação da especificação: Após a validação de todas as seções, consolide a especificação em um único documento (**SEGUINDO EXTAMENTE O MODELO `./specification.md`, SEM ADICIONAR OU REMOVER SEÇÕES, ALTERAR A ESTRUTURA E REMOVER TEXTOS**) e salve no caminho `docs/.superpowers/AAAA-MM-DD-<topico>.md`.
+6. Consolidação da especificação: Após a validação de todas as seções, consolide a especificação em um único documento (**SEGUINDO EXTAMENTE O MODELO `./specification.md`, SEM ADICIONAR OU REMOVER SEÇÕES, ALTERAR A ESTRUTURA E REMOVER TEXTOS**) e salve no caminho `docs/.superpowers/specs/AAAA-MM-DD-<solucao>.md`.
 
 ## Instruções
 
 - Toda interação com o usuário **DEVE** usar a ferramenta `AskUserQuestion` com opções selecionáveis. Texto livre para perguntas é proibido.
 - A etapa 4 diz em 2-3 abordagens, mas sinta-se livre para propor mais ou menos opções dependendo do contexto e da complexidade do problema.
 - A etapa 5 é **SOMENTE UM RESUMO**, portanto, não é necessário entrar em detalhes técnicos ou específicos. O objetivo é fornecer uma visão geral clara e concisa de cada seção para que o usuário possa validar antes de prosseguir.
-- A etapa 6 é **CRUCIAL** para garantir que a especificação final esteja bem estruturada e siga o modelo definido. Certifique-se de seguir o modelo `./specification.md` rigorosamente para manter a consistência e a clareza da documentação.
+- Siga **RIGOROSAMENTE** o modelo `./specification.md` para garantir que a especificação esteja bem estruturada e clara.
 - Se um tópico precisar de mais exploração, divida-o em várias perguntas separadas.
 - O processo é interativo e colaborativo, portanto, esteja aberto a ajustar as abordagens.
 - Utilize YAGNI (You Aren't Gonna Need It) para evitar a tentação de adicionar detalhes desnecessários à especificação. Concentre-se apenas no que é essencial para resolver o problema do usuário.
@@ -46,4 +46,4 @@ $ARGUMENTS
 
 ## Saída
 
-Após a conclusão do processo, informe **SOMENTE (SEM MAIS TEXTOS)** o caminho da especificação salva para o usuário, por exemplo: "A especificação foi salva em `docs/.superpowers/2024-06-30-nome-do-topico.md`".
+Após a conclusão do processo, informe **SOMENTE E EXCLUSIVAMENTE** o caminho da especificação salva para o usuário, por exemplo: "A especificação foi salva em `docs/.superpowers/specs/2024-06-30-nome-da-solucao.md`".
